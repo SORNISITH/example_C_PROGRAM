@@ -12,6 +12,7 @@ int main(int argc, char* argv[])
     scanf("%s", buf);
     for (int i = 0; buf[i] != '\0'; i++) {
         sum += check_letter(buf[i]);
+
     }
     printf("srable valueue : %d", sum);
     return 0;

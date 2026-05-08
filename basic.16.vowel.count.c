@@ -9,6 +9,8 @@ int main(int argc, char* argv[])
     char vowel = 0;
     int index = 0;
 
+
+
     printf("Enter Sentence : ");
     fgets(sentence, sizeof(sentence), stdin);
 

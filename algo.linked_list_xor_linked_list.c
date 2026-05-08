@@ -1,8 +1,10 @@
+#include <asm-generic/errno-base.h>
 #include <stddef.h>
 #include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <stdlib.h>
 
 // TODO : workinhg enque and deque
 struct Node {
@@ -58,7 +60,9 @@ int main()
         LLX_push(mylist, i + i);
     }
 
-    LLX_display(mylist, REVERSE);
+
+
+ LLX_display(mylist, REVERSE);
 
     printf("\n");
     // LLX_display(mylist, NORMAL);
@@ -104,6 +108,7 @@ void LLX_pop(struct LINKED_LISTED_XOR* list)
 
 void LLX_push(struct LINKED_LISTED_XOR* list, int value)
 {
+
     struct Node* new_node = malloc(sizeof(*new_node));
     new_node->value = value;
     if (!util_check_null_list(list->Head)) {
@@ -148,6 +153,7 @@ void LLX_display(struct LINKED_LISTED_XOR* list, short mode)
         LLX_LOOP_NEXT_STEP(list, util_print_current_value, mode);
     } else {
         printf("List is Empty !");
+        printf("hello oworld");
     }
 }
 

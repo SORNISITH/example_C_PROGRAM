@@ -24,6 +24,7 @@ void insert(Node** root, int valueue)
         free(n_NODE);
         Sucess_CALL;
     } else if (valueue <= (*root)->valueue) {
+
         insert(&(*root)->left, valueue);
         free(n_NODE);
         Sucess_CALL;

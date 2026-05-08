@@ -1,7 +1,10 @@
+#include <stdlib.h>
+
 int simple(int* xp, int y)
 {
     int x = *xp + y;
     *xp = y;
+    char* xxxx = NULL;    
     return x;
 }
 

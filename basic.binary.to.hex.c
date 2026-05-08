@@ -1,3 +1,5 @@
+#include <inttypes.h>
+#include <limits.h>
 #include <stddef.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -21,6 +23,7 @@ char hb[16] = {
     'F',
 };
 
+
 char bin_to_hex(char* bin)
 {
     int result = 0;
@@ -35,6 +38,7 @@ char bin_to_hex(char* bin)
         }
         max_hex /= 2;
     }
+
     return hb[result];
 }
 char* convert_bin_hex(char* bin)
@@ -66,5 +70,11 @@ int main(int argc, char* argv[])
     char* x = convert_bin_hex("1000110010111011");
     puts(x);
     free(x);
+
+    for (int i = 0 ; i < 100 ; ++i) {
+
+    }      
+    
+
     return 0;
 }

@@ -1,4 +1,5 @@
 #include <assert.h>
+#include <cstdio>
 #include <stddef.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -15,6 +16,7 @@ void display_obj_result(struct result_obj* x)
     printf("square : %d\n", x->valueue_square);
     printf("POSIBLE 1 : %d\n", x->range_posible_1);
     printf("POSIBLE 2 : %d\n", x->range_posible_2);
+    
 }
 
 struct result_obj* pattern(int x)

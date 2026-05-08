@@ -48,6 +48,7 @@ int main(int argc, char* argv[])
     enque(newstr, "enque", 30);
     enque(newstr, "sec enque", 30);
     enque(newstr, "last enque", 30);
+    enque(newstr, "mylassssss", 2000);
     deque(newstr);
     pop(newstr);
     //    display_reverse(newstr, '<');
@@ -59,7 +60,7 @@ int main(int argc, char* argv[])
 
 STRING* NEW_LIST()
 {
-    STRING* new = malloc(sizeof(STRING));
+  STRING* new = malloc(sizeof(*new));
     new->HEAD_WORD = NULL;
     new->TAIL_WORD = NULL;
     new->size = 0;
@@ -69,6 +70,7 @@ STRING* NEW_LIST()
 void display(STRING* self, char seperator)
 {
     if (self == NULL) {
+
         return;
     }
     Word* current = self->HEAD_WORD;

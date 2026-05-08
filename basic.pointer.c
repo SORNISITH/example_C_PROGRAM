@@ -49,7 +49,7 @@ void search_2d_arr(int row, int col, int arr[row][col])
 int main(int argc, char* argv[])
 {
     int a[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-    int* p = a;
+
     int* q = a + (10 - 1);
     int* r = a;
     return EXIT_SUCCESS;
