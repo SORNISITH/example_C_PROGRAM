@@ -58,6 +58,7 @@ void add_reminder(char (*msg)[MAX_MSG], int* index)
 
 void get_date_input(char* date)
 {
+
     int day;
     int month;
     int year;

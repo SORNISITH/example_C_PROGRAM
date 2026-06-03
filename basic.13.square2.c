@@ -7,6 +7,7 @@ int main(int argc, char* argv[])
     printf("Enter Number of Table : ");
     scanf("%ld", &n);
     int k;
+    
     char x;
     for (i = 1, k = 1; i <= n; i++, k++) {
         if (k < 24) {

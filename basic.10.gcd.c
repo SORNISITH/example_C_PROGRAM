@@ -15,7 +15,6 @@ int main(int argc, char* argv[])
     printf("lower term : %d%c%d", m, buf, n);
     return 0;
 }
-
 int euclid_gcd(int u, int v)
 {
     if (u < v) {

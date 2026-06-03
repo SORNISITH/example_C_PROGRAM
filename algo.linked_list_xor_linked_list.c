@@ -1,10 +1,7 @@
-#include <asm-generic/errno-base.h>
-#include <stddef.h>
 #include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <stdlib.h>
 
 // TODO : workinhg enque and deque
 struct Node {
@@ -60,10 +57,7 @@ int main()
         LLX_push(mylist, i + i);
     }
 
-
-
- LLX_display(mylist, REVERSE);
-
+    LLX_display(mylist, REVERSE);
     printf("\n");
     // LLX_display(mylist, NORMAL);
     LLX_KILLS(mylist);

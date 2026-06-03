@@ -17,6 +17,7 @@ char* month[] = { [1] = "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", 
 
 void split_date(char* d);
 
+
 int main(int argc, char* argv[])
 {
     if (argc < 2) {

@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 typedef struct Node {
     int valueue;
     struct Node* next;
@@ -14,16 +15,19 @@ void destroy_list(Node* list);
 void push_p(Node** head, int valueue);
 void pop(Node** list)
 {
+
     if (*list == NULL) {
         return;
     }
     Node* temp = *list;
     *list = (*list)->next;
+
     free(temp);
 }
 
 int main(int argc, char* argv[])
 {
+
     Node* List = NULL;
     push_p(&List, 10);
     push_p(&List, 20);

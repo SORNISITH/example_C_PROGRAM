@@ -8,6 +8,7 @@ enum mode {
     BASE64,
     ASCII
 };
+
 const char cb64[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
 int base64_map[256];
 
@@ -33,6 +34,9 @@ int main(int argc, char* argv[])
 
     puts(encoded_str);
     puts(decoded_str);
+    
+  
+
 
     free(encoded_str);
     free(decoded_str);

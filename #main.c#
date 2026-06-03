@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <unistd.h>
+
+void (*m)();
+
+void f()
+{
+    printf("child is ruing m = %p", &m);
+}
+
+int main(int argc, char* argv[])
+{
+    m = f;
+    if (fork() == 0) {
+        printf("childe start \n");
+        int i;
+        for (i = 0; i < 15; ++i) {
+            sleep(1);
+            (*m)();
+        }
+    } else {
+        puts("parent has started");
+        sleep(5);
+        printf("parent is running  let's write to m = %p\n", &m);
+        m = 0;
+        printf("parent is runing let write m = %p \n", &m);
+        (*m)();
+
+        printf("parent is still alive \n");
+    }
+    return 0;
+}
