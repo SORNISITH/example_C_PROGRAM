@@ -21,12 +21,10 @@ Node* create_note(int valueue);
 int main(int argc, char* argv[])
 {
     Que* que = create_que();
-
     enque(que, 10);
     enque(que, 30);
     enque(que, 40);
     enque(que, 50);
-
     return EXIT_SUCCESS;
 }
 
@@ -57,3 +55,4 @@ Node* create_note(int valueue)
     new_NODE->next = NULL;
     return new_NODE;
 }
+
