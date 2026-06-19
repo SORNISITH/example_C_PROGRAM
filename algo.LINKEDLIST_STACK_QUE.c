@@ -48,7 +48,7 @@ int main(int argc, char* argv[])
     enque(newstr, "enque", 30);
     enque(newstr, "sec enque", 30);
     enque(newstr, "last enque", 30);
-    enque(newstr, "mylassssss", 2000);
+   enque(newstr, "mylassssss", 2000);
     deque(newstr);
     pop(newstr);
     //    display_reverse(newstr, '<');
