@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <time.h>
 
-
 typedef struct Node {
     int valueue;
     struct Node* next;
@@ -25,6 +24,7 @@ int main(int argc, char* argv[])
     enque(que, 30);
     enque(que, 40);
     enque(que, 50);
+    
     return EXIT_SUCCESS;
 }
 

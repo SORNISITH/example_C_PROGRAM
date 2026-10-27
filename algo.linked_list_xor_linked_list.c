@@ -3,6 +3,11 @@
 #include <stdlib.h>
 #include <time.h>
 
+// sor nisith linklist xor link list
+
+// how to use 
+// gcc -std=c23 thisfile.c && ./a.out
+
 // TODO : workinhg enque and deque
 struct Node {
     int value;
@@ -53,7 +58,7 @@ int main()
     // LLX_push(mylist, 80);
     // LLX_push(mylist, 40);
     // LLX_push(mylist, 90);
-    for (int i = 1; i <= 1000000; i++) {
+    for (int i = 1; i <= 1000; i++) {
         LLX_push(mylist, i + i);
     }
 
