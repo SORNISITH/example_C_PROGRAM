@@ -54,7 +54,7 @@ int main()
 {
     struct LINKED_LISTED_XOR* mylist = NEW_LIST_XOR();
 
-    LLX_pop(mylist);
+    LLX_pop(mylist); // test if err when null
     // LLX_push(mylist, 80);
     // LLX_push(mylist, 40);
     // LLX_push(mylist, 90);
