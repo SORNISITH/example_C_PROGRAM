@@ -4,7 +4,7 @@
 #include <time.h>
 
 // sor nisith linklist xor link list
-
+// XOR Linked List  in c
 // how to use 
 // gcc -std=c23 thisfile.c && ./a.out
 
